@@ -17,4 +17,4 @@ Your code should follow the rules and you should help others follow the rules wh
 None of these rules are personal, there is no agenda in the rules; it's all about the code. The rules are here to help us write good code and work together as a team. It's about learning as well, front end development is continually evolving with new techniques and new tools becoming available all the time, the rules will keep evolving with these best practices and be updated over time.
 
 # Rule 4: Contribute.
-The rules are not here to be written by one and followed by all, they are written by the team for the team. So contribute your ideas and best practices! See the [Rules for Contributing](docs/rules-for-contributing.md).
+The rules are not here to be written by one and followed by all, they are written by the team for the team. So contribute your ideas and best practices! See [How to Contribute](docs/how-to-contribute.md).
