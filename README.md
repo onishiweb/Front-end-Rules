@@ -18,3 +18,16 @@ None of these rules are personal, there is no agenda in the rules; it's all abou
 
 ## Rule 4: Contribute.
 The rules are not here to be written by one and followed by all, they are written by the team for the team. So contribute your ideas and best practices! See [How to Contribute](docs/rules-for-contributing.md).
+
+## Rule 10: SCSS Comments
+Let's make our comments consistent and beautiful.
+
+In SCSS, avoid using /* for single-line/inline comments - use // like in JS. It won't be exported to your CSS file, but it then allows you to comment out a whole block of SCSS with the standard CSS comments /*, without any interfearence.
+
+Also, I use the following format for SCSS structuring:
+
+// =============================================================================
+// SCSS Header
+// =============================================================================
+
+It won't be processed into the raw CSS, which is probably a good thing, and it looks SEXY. I just love looking @ it.
