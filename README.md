@@ -39,3 +39,9 @@ It won't be processed into the raw CSS, which is probably a good thing, and it l
 
 ## Rule 11: * { box-sizing: border-box; }
 Border box is not default and required far more for resposive layouts than content-box. To save time worrying about when it's included, border-box everything. Use the compass mixin for backward compatibility upto and including IE8. Won't affect speed or anything - using * uses just as much memory as any other css.
+
+## Rule 12: Use $variables for sizing
+Keep a $spacing variable - it keeps your site's paddings, margins and gutterings consistent.
+You can make more variables all relative to your main spacing variable too e.g $spacing-half: $spacing / 2
+With fonts, this is also a good idea. $fnt-lrg; $fnt-med; $fnt-small; It's easy on big front-end's to end up with random font sizes.
+Subtle consistency goes a long way.
