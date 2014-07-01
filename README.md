@@ -19,6 +19,7 @@ None of these rules are personal, there is no agenda in the rules; it's all abou
 ## Rule 4: Contribute.
 The rules are not here to be written by one and followed by all, they are written by the team for the team. So contribute your ideas and best practices! See [How to Contribute](docs/rules-for-contributing.md).
 
+<<<<<<< HEAD
 ## Rule 10: SCSS Comments
 Let's make our comments consistent and beautiful.
 
@@ -31,3 +32,9 @@ Also, I use the following format for SCSS structuring:
 // =============================================================================
 
 It won't be processed into the raw CSS, which is probably a good thing, and it looks SEXY. I just love looking @ it.
+=======
+## Rule 5: Doctype.
+**Always** use the HTML5 Doctype:
+
+	<!DOCTYPE html>
+>>>>>>> refs/heads/master
