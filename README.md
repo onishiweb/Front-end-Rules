@@ -53,3 +53,22 @@ This is a nice and clear method of introducing a new section in a CSS file and c
 Border box is not default and required far more for responsive layouts than content-box. To save time worrying about when it's included, border-box everything. Use the compass mixin for backward compatibility up to and including IE8. Won't affect speed or anything - using `*` uses just as much memory as any other css.
 
 See [Paul Irish's article](http://www.paulirish.com/2012/box-sizing-border-box-ftw/) for more information.
+
+## Rule 11: Attribute order
+HTML attributes should come in this particular order for easier reading of code.
+
+- src, for, type, href
+- title, alt, name
+- id
+- class
+- data-*
+- aria-*, role
+- boolean attributes (required, checked, etc.)
+
+To easily understand the markup you're writing, the main attribute of the element should be first, and for images and links, the title/alt attribute should follow immediately. Style and interaction attributes like classes, IDs, and data attributes should be towards the end of the elements, followed by a11y attributes.
+
+	<input type="text" name="..." id="..." class="..." required>
+
+	<img src="..." alt="..." class="...">
+
+	<a href="..." title="..." id="..." class="..."></a>
