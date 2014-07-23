@@ -8,7 +8,7 @@ We have a growing Front End team here at Architect working on different projects
 The rules are here as our guide to all things Front End at Architect, they are created by us and for us*. By following these rules we ensure our code is well-written, well thought out, and easy to maintain.
 
 > Every line of code should appear to be written by a single person, no matter the number of contributors.
-- [@mdo](https://twitter.com/mdo)
+[@mdo](https://twitter.com/mdo)
 
 ## Rule 1: Obey the rules.
 Where possible all of these rules should be followed to the letter. But, all rules are open to discussion and review. Obviously there are also times where a rule must be broken, but you should be able to explain why it was necessary and what benefit it gave you.
