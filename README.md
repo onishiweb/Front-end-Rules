@@ -23,3 +23,30 @@ The rules are not here to be written by one and followed by all, they are writte
 **Always** use the HTML5 Doctype:
 
 	<!DOCTYPE html>
+
+## Rule 6: It is what it is
+Naming conventions for selectors should be based on what they are rather than what they look like. Class names like `bluetext`, or `redborder` become redundant if your colour scheme changes. A much better way to name your classes is with the role a certain HTML element is intended for in the document.
+
+## Rule 7: Tabs are King in this castle.
+Always use tabs, never spaces. Ensure everything nested is indented correctly by a single tab in all code including HTML, CSS/Sass and JavaScript.
+
+## Rule 8: Do not use that which is unnecessary.
+Code and Page bloat are easily avoidable, and serve both the developer and the audience to avoid. The more external frameworks we include in our JavaScript the longer each page takes to load, and the more code we have to trawl through when something goes wrong. Usually, there is a micro-library that will do the same thing, if VanillaJS won't.
+
+This doesn't mean using micro-libraries over jQuery is always the correct option, but should be at least considered on a project specific basis.
+
+## Rule 9: Comments (Sass)
+Ensure comments are consistent and beautiful. In SCSS, avoid using `/* */` for single-line/inline comments - use `//` instead. 
+
+To break up a section of CSS in a file use the following comment style:
+
+	// ===================================
+	// Header 
+	// ===================================
+
+This is a nice and clear method of introducing a new section in a CSS file and comes with the advantage that it won't be processed into the raw CSS.
+
+## Rule 10: * { box-sizing: border-box; }
+Border box is not default and required far more for responsive layouts than content-box. To save time worrying about when it's included, border-box everything. Use the compass mixin for backward compatibility up to and including IE8. Won't affect speed or anything - using `*` uses just as much memory as any other css.
+
+See [Paul Irish's article](http://www.paulirish.com/2012/box-sizing-border-box-ftw/) for more information.
