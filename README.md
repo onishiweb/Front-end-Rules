@@ -65,7 +65,10 @@ Border box is not default and required far more for responsive layouts than cont
 
 See [Paul Irish's article](http://www.paulirish.com/2012/box-sizing-border-box-ftw/) for more information.
 
-## Rule 12: Comments (Sass)
+## Rule 12: The correct number of JavaScript libraries to know is `n+1`
+Most front end developers are familiar with JavaScript and jQuery, but there are now more frameworks than you can shake a stick at! Whether it's Angular, Meteor, Backbone, Ember, Coffeescript, or Node.js there's always something new to learn. The drive of a front end developer should mean there's always more you can learn, whether you have the time or not is another matter, but it's the drive that's important.
+
+## Rule 13: Comments (Sass)
 Ensure comments are consistent and beautiful. In SCSS, avoid using `/* */` for single-line/inline comments - use `//` instead. 
 
 To break up a section of CSS in a file use the following comment style:
