@@ -78,3 +78,6 @@ To break up a section of CSS in a file use the following comment style:
 	// ===================================
 
 This is a nice and clear method of introducing a new section in a CSS file and comes with the advantage that it won't be processed into the raw CSS.
+
+## Rule 24: Measurements should be applied using the appropriate unit
+Font sizes in `rem` (with pixel fallback); the base font size of the site should be left at the default (`16px`) for accessibility. Media Queries in `em`, always; this helps the responsive layout respond when the user adjusts the font size of their browser. Layout in `%`; simples.
