@@ -79,5 +79,16 @@ To break up a section of CSS in a file use the following comment style:
 
 This is a nice and clear method of introducing a new section in a CSS file and comes with the advantage that it won't be processed into the raw CSS.
 
+## Rule 14: Always follow the Outside-In order for style definitions
+When defining styles, always follow the Outside-In order. This means:
+
+- Layout Properties (`position`, `float`, `clear`, `display`, `z-index`)
+- Box Model Properties (`width`, `height`, `margin`, `padding`)
+- Visual Properties (`background`, `border`, `box-shadow`)
+- Typography Properties (`color`, `font-family`, `font-size`, `text-align`, `text-transform`)
+- Misc Properties (`cursor`, `overflow`)
+
+For more information and an example, this has been slightly modified from an [article by Guy Routledge on WebTuts+](http://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685)
+
 ## Rule 24: Measurements should be applied using the appropriate unit
 Font sizes in `rem` (with pixel fallback); the base font size of the site should be left at the default (`16px`) for accessibility. Media Queries in `em`, always; this helps the responsive layout respond when the user adjusts the font size of their browser. Layout in `%`; simples.
