@@ -90,5 +90,46 @@ When defining styles, always follow the Outside-In order. This means:
 
 For more information and an example, this has been slightly modified from an [article by Guy Routledge on WebTuts+](http://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685)
 
+## Rule 15: Make good use of whitespace
+
+## Rule 16: Multi-line CSS
+
+## Rule 17: Nesting - 3 levels deep (4 absolute maximum)
+## Rule 18: Naming conventions - lowercase, hyphen delimited
+## Rule 19: Accessibility first
+## Rule 20: Avoid `display:none;` where possible
+## Rule 21: Specificity, don’t use IDs in CSS
+
+## Rule 22: Avoid `!important` at all times
+If you have to use `!important` somewhere, the CSS is badly written. Go back and refactor.
+
+## Rule 23: Shame.css
+Hacks are ok, for a quick fix. However, put them in a `shame.css` file so we know that they are hacks and need to be refactored.
+
 ## Rule 24: Measurements should be applied using the appropriate unit
 Font sizes in `rem` (with pixel fallback); the base font size of the site should be left at the default (`16px`) for accessibility. Media Queries in `em`, always; this helps the responsive layout respond when the user adjusts the font size of their browser. Layout in `%`; simples.
+
+## Rule 25: Media query placement
+
+## Rule 26: Mobile first rules
+Only use `max-width` queries for mobile specific styles to avoid a lot of overwriting.
+
+## Rule 27: Don’t hand-write browser-prefixes
+Use Autoprefixer/Compass mixins
+
+## Rule 28: Shorthand notation
+
+## Rule 29: Set up your editor correctly
+Use tabs set to 4 spaces.
+Trim trailing white space on save.
+Set encoding to UTF-8.
+Add new line at end of files.
+
+## Rule 30: Never omit optional closing tags
+## Rule 31: CSS at the top, JavaScript at the bottom
+
+## Rule 32: Always Lint code 
+Using both scss-lint and js-hint.
+
+## Rule 33: No spaces after declarations
+Makes things easier to read, reduces tram lines.
