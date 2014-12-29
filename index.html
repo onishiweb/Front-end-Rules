@@ -15,7 +15,7 @@
 
 		<h2><a href="http://www.velominati.com/the-rules/">The Rules</a></h2>
 
-		<p>We have a growing Front End team here at Architect working on different projects all over the place all the time, in collaboration and in solitude. Yet we should all be able to pick up and work on any project at any time, regardless of the initial developer and be able to find our way around, understand what we're looking at and pick up where someone left off as easily if it were our own project to begin with.</p>
+		<p>We have a growing Front End team here at Architect working on different projects all over the place all the time, in collaboration and in solitude. Yet we should all be able to pick up and work on any project at any time, regardless of the initial developer and be able to find our way around, understand what we&rsquo;re looking at and pick up where someone left off as easily if it were our own project to begin with.</p>
 
 		<p>The rules are here as our guide to all things Front End at Architect, they are created by us and for us. By following these rules we ensure our code is well-written, well thought out, and easy to maintain.</p>
 
@@ -33,7 +33,7 @@
 
 		<h2>Rule 2: Lead by example.</h2>
 
-		<p>You should make yourself familiar with the rules inside and out and ensure your code always follows the rules. Code reviews will be employed and pull requests will be requested if you're found to be breaking the rules.</p>
+		<p>You should make yourself familiar with the rules inside and out and ensure your code always follows the rules. Code reviews will be employed and pull requests will be requested if you&rsquo;re found to be breaking the rules.</p>
 
 		<h2>Rule 3: Guide the uninitiated</h2>
 
@@ -83,8 +83,7 @@
 
 		<p>To easily understand the markup you&rsquo;re writing, the main attribute of the element should be first, and for images and links, the title/alt attribute should follow immediately. Style and interaction attributes like classes, IDs, and data attributes should be towards the end of the elements, followed by a11y attributes.</p>
 
-<pre><code>
-&lt;input type="text" name="..." id="..." class="..." required&gt;
+<pre><code>&lt;input type="text" name="..." id="..." class="..." required&gt;
 &lt;img src="..." alt="..." class="..."&gt;
 &lt;a href="..." title="..." id="..." class="..."&gt;&lt;/a&gt;
 </code></pre>
@@ -104,8 +103,7 @@
 
 		<p>To break up a section of CSS in a file use the following comment style:</p>
 
-<pre><code>
-// ===================================
+<pre><code>// ===================================
 // Header
 // ===================================
 </code></pre>
@@ -132,8 +130,7 @@
 
 		<p>This:</p>
 
-<pre><code>
-.element {
+<pre><code>.element {
 	display:block;
 	width:100%;
 
@@ -149,8 +146,7 @@
 
 		<p>Not:</p>
 
-<pre><code>
-.element{
+<pre><code>.element{
 	display:block;
 	width:100%;
 	.child{
@@ -202,8 +198,7 @@
 
 		<p>Media queries should appear inline with the element you&rsquo;re applying them to:</p>
 
-<pre><code>
-.element {
+<pre><code>.element {
 	width:100%;
 
 	@include breakpoint(medium) {
@@ -230,16 +225,14 @@
 
 		<p>For instance, use:</p>
 
-<pre><code>
-margin:0 20px;
+<pre><code>margin:0 20px;
 padding:0 10px 10px;
 background:transparent 0 0 no-repeat;
 </code></pre>
 
 		<p>instead of:</p>
 
-<pre><code>
-margin:0 20px 0 20px;
+<pre><code>margin:0 20px 0 20px;
 padding:0 10px 10px 10px;
 background-color:transparent;
 background-position:0 0;
@@ -259,8 +252,7 @@ background-repeat:no-repeat;
 
 		<p>In Sublime the settings are:</p>
 
-<pre><code>
-"tab_size": 4,
+<pre><code>"tab_size": 4,
 "translate_tabs_to_spaces": false,
 "trim_trailing_white_space_on_save": true,
 "ensure_newline_at_eof_on_save": true,
