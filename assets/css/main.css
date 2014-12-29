@@ -118,13 +118,26 @@ small {
 	font-size:.75rem;
 }
 
+code {
+	font-family:'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	font-size:inherit;
+}
+
+pre > code {
+	font-size:18px;
+	font-size:1.125rem;
+}
+
 p, ol, ul, blockquote, pre {
 	margin:0 0 24px;
 }
 
-pre,
-code {
-	font-family:'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	font-size:18px;
-	font-size:1.125rem;
+/************************************
+* LAYOUT
+************************************/
+
+.container {
+	width:90%;
+	max-width:1200px;
+	margin:0 auto;
 }
