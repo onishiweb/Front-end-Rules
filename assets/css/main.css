@@ -49,7 +49,49 @@ table {
 
 
 /************************************
-*	BASE STYLES
+* FONTS
 ************************************/
 
+@import url(http://fonts.googleapis.com/css?family=Philosopher:400,700|Muli:300,400,300italic);
 
+/* font-family: 'Philosopher', sans-serif; */
+/* font-family: 'Muli', sans-serif; */
+
+/************************************
+* BASE STYLES
+************************************/
+
+h1,
+h2,
+h3,
+h4 {
+	font-family:'Philosopher', sans-serif;
+	font-weight:700;
+}
+
+h1 {
+	font-size:48px;
+	font-size:3rem;
+}
+
+p, li, blockquote {
+	font-family:'Muli', sans-serif;
+	font-size:24px;
+	font-size:1.5rem;
+	font-weight:300;
+}
+
+blockquote, em {
+	font-style:italic;
+}
+
+strong {
+	font-weight:400;
+}
+
+pre,
+code {
+	font-family:'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	font-size:16px;
+	font-size:1rem;
+}
