@@ -52,7 +52,7 @@ table {
 * FONTS
 ************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Philosopher:400,700|Muli:300,400,300italic);
+/*@import url(http://fonts.googleapis.com/css?family=Philosopher:400,700|Muli:300,400,300italic);*/
 
 /* font-family: 'Philosopher', sans-serif; */
 /* font-family: 'Muli', sans-serif; */
@@ -72,6 +72,16 @@ h4 {
 h1 {
 	font-size:48px;
 	font-size:3rem;
+}
+
+h2 {
+	font-size:40px;
+	font-size:2.5rem;
+}
+
+h3 {
+	font-size:32px;
+	font-size:2rem;
 }
 
 p, li, blockquote {
