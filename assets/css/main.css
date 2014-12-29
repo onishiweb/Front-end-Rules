@@ -70,24 +70,38 @@ h4 {
 }
 
 h1 {
+	margin:0 0 24px;
 	font-size:48px;
 	font-size:3rem;
+	line-height:3.75rem;
 }
 
 h2 {
-	font-size:40px;
-	font-size:2.5rem;
+	margin:0 0 12px;
+	font-size:36px;
+	font-size:2.25rem;
+	line-height:1;
 }
 
 h3 {
-	font-size:32px;
-	font-size:2rem;
+	margin:0;
+	font-size:24px;
+	font-size:1.5rem;
+	line-height:1;
+}
+
+h4 {
+	margin:0;
+	font-size:18px;
+	font-size:1.125rem;
+	line-height:1;
 }
 
 p, li, blockquote {
 	font-family:'Muli', sans-serif;
 	font-size:18px;
 	font-size:1.125rem;
+	line-height:1.5rem;
 	font-weight:300;
 }
 
@@ -99,9 +113,18 @@ strong {
 	font-weight:400;
 }
 
+small {
+	font-size:12px;
+	font-size:.75rem;
+}
+
+p, ol, ul, blockquote, pre {
+	margin:0 0 24px;
+}
+
 pre,
 code {
 	font-family:'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	font-size:16px;
-	font-size:1rem;
+	font-size:18px;
+	font-size:1.125rem;
 }

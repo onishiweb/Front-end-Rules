@@ -12,124 +12,187 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
 	<body>
-		<h1>Architect&rsquo;s Front-end Rules</h1>
 
-		<h2><a href="http://www.velominati.com/the-rules/">The Rules</a></h2>
+		<header class="global-header">
+			<div class="container">
+				<h1>Architect&rsquo;s Front-end Rules</h1>
 
-		<p>We have a growing Front End team here at Architect working on different projects all over the place all the time, in collaboration and in solitude. Yet we should all be able to pick up and work on any project at any time, regardless of the initial developer and be able to find our way around, understand what we&rsquo;re looking at and pick up where someone left off as easily if it were our own project to begin with.</p>
+				<h2><a href="http://www.velominati.com/the-rules/">The Rules</a></h2>
 
-		<p>The rules are here as our guide to all things Front End at Architect, they are created by us and for us. By following these rules we ensure our code is well-written, well thought out, and easy to maintain.</p>
+				<p>We have a growing Front End team here at Architect working on different projects all over the place all the time, in collaboration and in solitude. Yet we should all be able to pick up and work on any project at any time, regardless of the initial developer and be able to find our way around, understand what we&rsquo;re looking at and pick up where someone left off as easily if it were our own project to begin with.</p>
 
-		<blockquote>
-			Every line of code should appear to be written by a single person, no matter the number of contributors.
-			<small><a href="https://twitter.com/mdo">@mdo</a></small>
-		</blockquote>
+				<p>The rules are here as our guide to all things Front End at Architect, they are created by us and for us. By following these rules we ensure our code is well-written, well thought out, and easy to maintain.</p>
+
+				<blockquote>
+					Every line of code should appear to be written by a single person, no matter the number of contributors.
+					<small><a href="https://twitter.com/mdo">@mdo</a></small>
+				</blockquote>
+			</div>
+		</header>
 
 
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 1: Obey the rules.</h2>
 
+				<p>Where possible all of these rules should be followed to the letter. But, all rules are open to discussion and review. Obviously there are also times where a rule must be broken, but you should be able to explain why it was necessary and what benefit it gave you.</p>
+			</div>
+		</article>
 
-		<h2>Rule 1: Obey the rules.</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 2: Lead by example.</h2>
 
-		<p>Where possible all of these rules should be followed to the letter. But, all rules are open to discussion and review. Obviously there are also times where a rule must be broken, but you should be able to explain why it was necessary and what benefit it gave you.</p>
+				<p>You should make yourself familiar with the rules inside and out and ensure your code always follows the rules. Code reviews will be employed and pull requests will be requested if you&rsquo;re found to be breaking the rules.</p>
+			</div>
+		</article>
 
-		<h2>Rule 2: Lead by example.</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 3: Guide the uninitiated</h2>
 
-		<p>You should make yourself familiar with the rules inside and out and ensure your code always follows the rules. Code reviews will be employed and pull requests will be requested if you&rsquo;re found to be breaking the rules.</p>
+				<p>You should help others follow the rules. Code reviews and pair programming are encouraged. Do your best to make yourself available for code reviews when possible, or make sure if you&rsquo;re a reviewer on a pull request you review the code thoroughly. If code is breaking the rules, comment and state the rule number the coder should check their code against.</p>
+			</div>
+		</article>
 
-		<h2>Rule 3: Guide the uninitiated</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 4: It&rsquo;s all about the <del>bike</del> code.</h2>
 
-		<p>You should help others follow the rules. Code reviews and pair programming are encouraged. Do your best to make yourself available for code reviews when possible, or make sure if you&rsquo;re a reviewer on a pull request you review the code thoroughly. If code is breaking the rules, comment and state the rule number the coder should check their code against.</p>
+				<p>None of these rules are personal, there is no agenda in the rules; it&rsquo;s all about the code. The rules are here to help us write good code and work together as a team. It&rsquo;s about learning as well, front end development is continually evolving with new techniques and new tools becoming available all the time, the rules will keep evolving with these best practices and be updated over time.</p>
 
-		<h2>Rule 4: It&rsquo;s all about the <del>bike</del> code.</h2>
+			</div>
+		</article>
 
-		<p>None of these rules are personal, there is no agenda in the rules; it&rsquo;s all about the code. The rules are here to help us write good code and work together as a team. It&rsquo;s about learning as well, front end development is continually evolving with new techniques and new tools becoming available all the time, the rules will keep evolving with these best practices and be updated over time.</p>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 5: Contribute.</h2>
 
-		<h2>Rule 5: Contribute.</h2>
+				<p>The rules are not here to be written by one and followed by all, they are written by the team for the team. So contribute your ideas and best practices! See <a href="docs/rules-for-contributing.md">How to Contribute</a>.</p>
+			</div>
+		</article>
 
-		<p>The rules are not here to be written by one and followed by all, they are written by the team for the team. So contribute your ideas and best practices! See <a href="docs/rules-for-contributing.md">How to Contribute</a>.</p>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 6: Tabs are King in this castle.</h2>
 
-		<h2>Rule 6: Tabs are King in this castle.</h2>
+				<p>Always use tabs, never spaces. Ensure everything nested is indented correctly by a single tab in all code including HTML, CSS/Sass and JavaScript.</p>
+			</div>
+		</article>
 
-		<p>Always use tabs, never spaces. Ensure everything nested is indented correctly by a single tab in all code including HTML, CSS/Sass and JavaScript.</p>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 7: Do not use that which is unnecessary.</h2>
 
-		<h2>Rule 7: Do not use that which is unnecessary.</h2>
+				<p>Code and Page bloat are easily avoidable, and serve both the developer and the audience to avoid. The more external frameworks we include in our JavaScript the longer each page takes to load, and the more code we have to trawl through when something goes wrong. Usually, there is a micro-library that will do the same thing, if VanillaJS won&rsquo;t.</p>
 
-		<p>Code and Page bloat are easily avoidable, and serve both the developer and the audience to avoid. The more external frameworks we include in our JavaScript the longer each page takes to load, and the more code we have to trawl through when something goes wrong. Usually, there is a micro-library that will do the same thing, if VanillaJS won&rsquo;t.</p>
+				<p>This doesn&rsquo;t mean using micro-libraries over jQuery is always the correct option, but should be at least considered on a project specific basis.</p>
+			</div>
+		</article>
 
-		<p>This doesn&rsquo;t mean using micro-libraries over jQuery is always the correct option, but should be at least considered on a project specific basis.</p>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 8: It is what it is</h2>
 
-		<h2>Rule 8: It is what it is</h2>
+				<p>Naming conventions for selectors should be based on what they are rather than what they look like. Class names like <code>bluetext</code>, or <code>redborder</code> become redundant if your colour scheme changes. A much better way to name your classes is with the role a certain HTML element is intended for in the document.</p>
+			</div>
+		</article>
 
-		<p>Naming conventions for selectors should be based on what they are rather than what they look like. Class names like <code>bluetext</code>, or <code>redborder</code> become redundant if your colour scheme changes. A much better way to name your classes is with the role a certain HTML element is intended for in the document.</p>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 9: Doctype.</h2>
 
-		<h2>Rule 9: Doctype.</h2>
+				<p><strong>Always</strong> use the HTML5 Doctype:</p>
 
-		<p><strong>Always</strong> use the HTML5 Doctype:</p>
+				<pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+			</div>
+		</article>
 
-		<pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 10: Attribute order</h2>
 
-		<h2>Rule 10: Attribute order</h2>
+				<p>HTML attributes should come in this particular order for easier reading of code.</p>
 
-		<p>HTML attributes should come in this particular order for easier reading of code.</p>
+				<ul>
+					<li>src, for, type, href</li>
+					<li>title, alt, name</li>
+					<li>id</li>
+					<li>class</li>
+					<li>data-*</li>
+					<li>aria-*, role</li>
+					<li>boolean attributes (required, checked, etc.)</li>
+				</ul>
 
-		<ul>
-			<li>src, for, type, href</li>
-			<li>title, alt, name</li>
-			<li>id</li>
-			<li>class</li>
-			<li>data-*</li>
-			<li>aria-*, role</li>
-			<li>boolean attributes (required, checked, etc.)</li>
-		</ul>
-
-		<p>To easily understand the markup you&rsquo;re writing, the main attribute of the element should be first, and for images and links, the title/alt attribute should follow immediately. Style and interaction attributes like classes, IDs, and data attributes should be towards the end of the elements, followed by a11y attributes.</p>
+				<p>To easily understand the markup you&rsquo;re writing, the main attribute of the element should be first, and for images and links, the title/alt attribute should follow immediately. Style and interaction attributes like classes, IDs, and data attributes should be towards the end of the elements, followed by a11y attributes.</p>
 
 <pre><code>&lt;input type="text" name="..." id="..." class="..." required&gt;
 &lt;img src="..." alt="..." class="..."&gt;
 &lt;a href="..." title="..." id="..." class="..."&gt;&lt;/a&gt;
 </code></pre>
+			</div>
+		</article>
 
-		<h2>Rule 11: <code>* { box-sizing:border-box; }</code></h2>
-		<p>Border box is not default and required far more for responsive layouts than content-box. To save time worrying about when it&rsquo;s included, border-box everything. Use the compass mixin for backward compatibility up to and including IE8. Won&rsquo;t affect speed or anything - using <code>*</code> uses just as much memory as any other css.</p>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 11: <code>* { box-sizing:border-box; }</code></h2>
 
-		<p>See <a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">Paul Irish&rsquo;s article</a> for more information.</p>
+				<p>Border box is not default and required far more for responsive layouts than content-box. To save time worrying about when it&rsquo;s included, border-box everything. Use the compass mixin for backward compatibility up to and including IE8. Won&rsquo;t affect speed or anything - using <code>*</code> uses just as much memory as any other css.</p>
 
-		<h2>Rule 12: The correct number of JavaScript libraries to know is <code>n+1</code></h2>
+				<p>See <a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">Paul Irish&rsquo;s article</a> for more information.</p>
+			</div>
+		</article>
 
-		<p>Most front end developers are familiar with JavaScript and jQuery, but there are now more frameworks than you can shake a stick at! Whether it&rsquo;s Angular, Meteor, Backbone, Ember, Coffeescript, or Node.js there&rsquo;s always something new to learn. The drive of a front end developer should mean there&rsquo;s always more you can learn, whether you have the time or not is another matter, but it&rsquo;s the drive that&rsquo;s important.</p>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 12: The correct number of JavaScript libraries to know is <code>n+1</code></h2>
 
-		<h2>Rule 13: Comments (Sass)</h2>
+				<p>Most front end developers are familiar with JavaScript and jQuery, but there are now more frameworks than you can shake a stick at! Whether it&rsquo;s Angular, Meteor, Backbone, Ember, Coffeescript, or Node.js there&rsquo;s always something new to learn. The drive of a front end developer should mean there&rsquo;s always more you can learn, whether you have the time or not is another matter, but it&rsquo;s the drive that&rsquo;s important.</p>
+			</div>
+		</article>
 
-		<p>Ensure comments are consistent and beautiful. In SCSS, avoid using <code>/* */</code> for single-line/inline comments - use <code>//</code> instead.</p>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 13: Comments (Sass)</h2>
 
-		<p>To break up a section of CSS in a file use the following comment style:</p>
+				<p>Ensure comments are consistent and beautiful. In SCSS, avoid using <code>/* */</code> for single-line/inline comments - use <code>//</code> instead.</p>
+
+				<p>To break up a section of CSS in a file use the following comment style:</p>
 
 <pre><code>// ===================================
 // Header
 // ===================================
 </code></pre>
 
-		<p>This is a nice and clear method of introducing a new section in a CSS file and comes with the advantage that it won&rsquo;t be processed into the raw CSS.</p>
+				<p>This is a nice and clear method of introducing a new section in a CSS file and comes with the advantage that it won&rsquo;t be processed into the raw CSS.</p>
+			</div>
+		</article>
 
-		<h2>Rule 14: Follow the Outside-In order for style definitions</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 14: Follow the Outside-In order for style definitions</h2>
 
-		<p>When defining styles, always follow the Outside-In order. This means:</p>
+				<p>When defining styles, always follow the Outside-In order. This means:</p>
 
-		<ul>
-			<li>Layout Properties (<code>position</code>, <code>float</code>, <code>clear</code>, <code>display</code>, <code>z-index</code>)</li>
-			<li>Box Model Properties (<code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code>)</li>
-			<li>Visual Properties (<code>background</code>, <code>border</code>, <code>box-shadow</code>)</li>
-			<li>Typography Properties (<code>color</code>, <code>font-family</code>, <code>font-size</code>, <code>text-align</code>, <code>text-transform</code>)</li>
-			<li>Misc Properties (<code>cursor</code>, <code>overflow</code>)</li>
-		</ul>
+				<ul>
+					<li>Layout Properties (<code>position</code>, <code>float</code>, <code>clear</code>, <code>display</code>, <code>z-index</code>)</li>
+					<li>Box Model Properties (<code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code>)</li>
+					<li>Visual Properties (<code>background</code>, <code>border</code>, <code>box-shadow</code>)</li>
+					<li>Typography Properties (<code>color</code>, <code>font-family</code>, <code>font-size</code>, <code>text-align</code>, <code>text-transform</code>)</li>
+					<li>Misc Properties (<code>cursor</code>, <code>overflow</code>)</li>
+				</ul>
 
-		<p>For more information and an example, this has been slightly modified from an <a href="http://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685">article by Guy Routledge on WebTuts+</a></p>
+				<p>For more information and an example, this has been slightly modified from an <a href="http://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685">article by Guy Routledge on WebTuts+</a></p>
+			</div>
+		</article>
 
-		<h2>Rule 15: Use whitespace</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 15: Use whitespace</h2>
 
-		<p>Good readability is key for good code, so make whitespace your friend. Leave space around all declarations and rules, and keep tabbing consistent throughout your code.</p>
+				<p>Good readability is key for good code, so make whitespace your friend. Leave space around all declarations and rules, and keep tabbing consistent throughout your code.</p>
 
-		<p>This:</p>
+				<p>This:</p>
 
 <pre><code>.element {
 	display:block;
@@ -145,7 +208,7 @@
 }
 </code></pre>
 
-		<p>Not:</p>
+				<p>Not:</p>
 
 <pre><code>.element{
 	display:block;
@@ -156,48 +219,88 @@
 }
 .another-element { [...] }
 </code></pre>
+			</div>
+		</article>
 
-		<h2>Rule 16: Multi-line CSS</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 16: Multi-line CSS</h2>
 
-		<p>Make sure CSS rules are always written across multiple lines and not a single line, the only exception being where there is only one rule for an element or a list of similar declarations that should be grouped for easier understanding.</p>
+				<p>Make sure CSS rules are always written across multiple lines and not a single line, the only exception being where there is only one rule for an element or a list of similar declarations that should be grouped for easier understanding.</p>
+			</div>
+		</article>
 
-		<h2>Rule 17: Nesting - 3 levels deep (4 absolute maximum)</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 17: Nesting - 3 levels deep (4 absolute maximum)</h2>
 
-		<p>In Sass aim to nest no more than 3 levels deep, with an absolute maximum of 4 levels. Sass makes it easy to nest selectors without much hassle but this results in overly specific selectors and will cause issues later on when trying to overwrite styles.</p>
+				<p>In Sass aim to nest no more than 3 levels deep, with an absolute maximum of 4 levels. Sass makes it easy to nest selectors without much hassle but this results in overly specific selectors and will cause issues later on when trying to overwrite styles.</p>
 
-		<p>Note: SCSS-Lint will be set to validate at 4 levels of nesting maximum.</p>
+				<p>Note: SCSS-Lint will be set to validate at 4 levels of nesting maximum.</p>
+			</div>
+		</article>
 
-		<h2>Rule 18: Naming conventions</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 18: Naming conventions</h2>
 
-		<p>All classes should be written in lowercase with hypens used to separate words. Only stray away from this when using a CSS methodology like BEM where underscores are part of the pattern.</p>
+				<p>All classes should be written in lowercase with hypens used to separate words. Only stray away from this when using a CSS methodology like BEM where underscores are part of the pattern.</p>
+			</div>
+		</article>
 
-		<h2>Rule 19: Accessibility first</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 19: Accessibility first</h2>
 
-		<p>Always write code with accessibility in mind. Make sure <code>HTML</code> is semantic and <code>CSS</code> won&rsquo;t cause any issues (see <a href="#rule-20">Rule 20</a>). Make sure <code>aria</code> roles are used when useful and necessary in <code>HTML<code>.
+				<p>Always write code with accessibility in mind. Make sure <code>HTML</code> is semantic and <code>CSS</code> won&rsquo;t cause any issues (see <a href="#rule-20">Rule 20</a>). Make sure <code>aria</code> roles are used when useful and necessary in <code>HTML<code>.
+			</div>
+		</article>
 
-		<h2>Rule 20: Avoid <code>display:none;</code> where possible</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 20: Avoid <code>display:none;</code> where possible</h2>
 
-		<p>Using <code>display:none</code> can be detrimental to accessibility and performance. Hiding content from screenreaders when it should be available or slowing page load times by loading content that will ultimately be hidden from the page. Try other alternatives like positioning off-screen or lazy-loading content if necessary.</p>
+				<p>Using <code>display:none</code> can be detrimental to accessibility and performance. Hiding content from screenreaders when it should be available or slowing page load times by loading content that will ultimately be hidden from the page. Try other alternatives like positioning off-screen or lazy-loading content if necessary.</p>
+			</div>
+		</article>
 
-		<h2>Rule 21: Specificity, don&rsquo;t use IDs in CSS</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 21: Specificity, don&rsquo;t use IDs in CSS</h2>
 
-		<p>ID&rsquo;s are a specificity nightmare so avoid using them in your CSS at all costs, even small specific styles can be applied with a custom class on the element. IDs should be used in HTML for hyperlinks to identify specific content on a page.<p>
+				<p>ID&rsquo;s are a specificity nightmare so avoid using them in your CSS at all costs, even small specific styles can be applied with a custom class on the element. IDs should be used in HTML for hyperlinks to identify specific content on a page.<p>
+			</div>
+		</article>
 
-		<h2>Rule 22: Avoid <code>!important</code> at all times</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 22: Avoid <code>!important</code> at all times</h2>
 
-		<p>If you have to use <code>!important</code> somewhere, the CSS is badly written. Go back and refactor.</p>
+				<p>If you have to use <code>!important</code> somewhere, the CSS is badly written. Go back and refactor.</p>
+			</div>
+		</article>
 
-		<h2>Rule 23: Shame.css</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 23: Shame.css</h2>
 
-		<p>Hacks are ok, for a quick fix. However, put them in a <code>shame.css</code> file so we know that they are hacks and need to be refactored.</p>
+				<p>Hacks are ok, for a quick fix. However, put them in a <code>shame.css</code> file so we know that they are hacks and need to be refactored.</p>
+			</div>
+		</article>
 
-		<h2>Rule 24: Measurements should be applied using the appropriate unit</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 24: Measurements should be applied using the appropriate unit</h2>
 
-		<p>Font sizes in <code>rem</code> (with pixel fallback); the base font size of the site should be left at the default (<code>16px</code>) for accessibility. Media Queries in <code>em</code>, always; this helps the responsive layout respond when the user adjusts the font size of their browser. Layout in <code>%</code>, with padding in <code>px</code> for consistency in the design.</p>
+				<p>Font sizes in <code>rem</code> (with pixel fallback); the base font size of the site should be left at the default (<code>16px</code>) for accessibility. Media Queries in <code>em</code>, always; this helps the responsive layout respond when the user adjusts the font size of their browser. Layout in <code>%</code>, with padding in <code>px</code> for consistency in the design.</p>
+			</div>
+		</article>
 
-		<h2>Rule 25: Media query placement</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 25: Media query placement</h2>
 
-		<p>Media queries should appear inline with the element you&rsquo;re applying them to:</p>
+				<p>Media queries should appear inline with the element you&rsquo;re applying them to:</p>
 
 <pre><code>.element {
 	width:100%;
@@ -208,30 +311,42 @@
 }
 </code></pre>
 
-		<p>This means responsiveness is clear and easy to work with, reduces the amount of duplicate styles, and will be output in the correct order in the compiled CSS.</p>
+				<p>This means responsiveness is clear and easy to work with, reduces the amount of duplicate styles, and will be output in the correct order in the compiled CSS.</p>
+			</div>
+		</article>
 
-		<h2>Rule 26: Mobile first media queries</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 26: Mobile first media queries</h2>
 
-		<p>Always use min-width media queries so that less CSS is having to be processed on smaller screens. Only use <code>max-width</code> queries for mobile specific styles to avoid a lot of overwriting.</p>
+				<p>Always use min-width media queries so that less CSS is having to be processed on smaller screens. Only use <code>max-width</code> queries for mobile specific styles to avoid a lot of overwriting.</p>
 
-		<p>The boilerplate has media query mixins the default <code>breakpoint()</code> mixin is min-width.</p>
+				<p>The boilerplate has media query mixins the default <code>breakpoint()</code> mixin is min-width.</p>
+			</div>
+		</article>
 
-		<h2>Rule 27: Don&rsquo;t hand-write browser-prefixes</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 27: Don&rsquo;t hand-write browser-prefixes</h2>
 
-		<p>Always use either an autoprefixer task or use Compass mixins to output browser prefixes for you, these tools are better handled to deal with outputting what&rsquo;s needed for the browsers we support and will be automatically updated over time.</p>
+				<p>Always use either an autoprefixer task or use Compass mixins to output browser prefixes for you, these tools are better handled to deal with outputting what&rsquo;s needed for the browsers we support and will be automatically updated over time.</p>
+			</div>
+		</article>
 
-		<h2>Rule 28: Shorthand notation</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 28: Shorthand notation</h2>
 
-		<p>Always favour shorthand notation.</p>
+				<p>Always favour shorthand notation.</p>
 
-		<p>For instance, use:</p>
+				<p>For instance, use:</p>
 
 <pre><code>margin:0 20px;
 padding:0 10px 10px;
 background:transparent 0 0 no-repeat;
 </code></pre>
 
-		<p>instead of:</p>
+				<p>instead of:</p>
 
 <pre><code>margin:0 20px 0 20px;
 padding:0 10px 10px 10px;
@@ -239,19 +354,23 @@ background-color:transparent;
 background-position:0 0;
 background-repeat:no-repeat;
 </code></pre>
+			</div>
+		</article>
 
-		<h2>Rule 29: Set up your editor correctly</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 29: Set up your editor correctly</h2>
 
-		<p>Always set up your editor to do the formatting work for you where possible.</p>
+				<p>Always set up your editor to do the formatting work for you where possible.</p>
 
-		<ul>
-			<li>Use tabs set to 4 spaces.</li>
-			<li>Trim trailing white space on save.</li>
-			<li>Set encoding to UTF-8.</li>
-			<li>Add new line at end of files.</li>
-		</ul>
+				<ul>
+					<li>Use tabs set to 4 spaces.</li>
+					<li>Trim trailing white space on save.</li>
+					<li>Set encoding to UTF-8.</li>
+					<li>Add new line at end of files.</li>
+				</ul>
 
-		<p>In Sublime the settings are:</p>
+				<p>In Sublime the settings are:</p>
 
 <pre><code>"tab_size": 4,
 "translate_tabs_to_spaces": false,
@@ -259,38 +378,66 @@ background-repeat:no-repeat;
 "ensure_newline_at_eof_on_save": true,
 "default_encoding": "UTF-8"
 </code></pre>
+			</div>
+		</article>
 
-		<h2>Rule 30: Never omit optional closing tags</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 30: Never omit optional closing tags</h2>
 
-		<p>Always close tags.</p>
+				<p>Always. always, always close tags.</p>
+			</div>
+		</article>
 
-		<h2>Rule 31: CSS at the top, JavaScript at the bottom</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 31: CSS at the top, JavaScript at the bottom</h2>
 
-		<p>By default all styles should be included in the <code>&lt;head&gt;</code> and all script files should be included before the closing <code>&lt;/body&gt;</code> tag. Exceptions for Modernizr or fonts is allowed, but jQuery should _always_ be included at the bottom.</head>
+				<p>By default all styles should be included in the <code>&lt;head&gt;</code> and all script files should be included before the closing <code>&lt;/body&gt;</code> tag. Exceptions for Modernizr or fonts is allowed, but jQuery should _always_ be included at the bottom.</head>
 
-		<p><em>Exceptions of course apply if working with an "above the fold" CSS technique.</em></p>
+				<p><em>Exceptions of course apply if working with an "above the fold" CSS technique.</em></p>
+			</div>
+		</article>
 
-		<h2>Rule 32: Lint code</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 32: Lint code</h2>
 
-		<p>Use a task runner to ensure that all code written by us is linted, library code can be excluded from linting. Use both JSHint and SCSS-Lint where possible.</p>
+				<p>Use a task runner to ensure that all code written by us is linted, library code can be excluded from linting. Use both JSHint and SCSS-Lint where possible.</p>
+			</div>
+		</article>
 
-		<h2>Rule 33: No spaces after declarations</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 33: No spaces after declarations</h2>
 
-		<p>Makes things easier to read, reduces tram lines.</p>
+				<p>Makes things easier to read, reduces tram lines.</p>
+			</div>
+		</article>
 
-		<h2>Rule 34: Pick a methodology/pattern and stick to it</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 34: Pick a methodology/pattern and stick to it</h2>
 
-		<p>Following on from <a href="#rule-8">Rule #8</a>) on naming conventions, if you&rsquo;re going to choose a CSS methodology like BEM or OOCSS or the modular JS pattern, make sure you consistent throughout the project. Choose a structure and stick with it throughout and ensure all developers on the project are aware of the methodology being used and remain consistent to it as well.</p>
+				<p>Following on from <a href="#rule-8">Rule #8</a>) on naming conventions, if you&rsquo;re going to choose a CSS methodology like BEM or OOCSS or the modular JS pattern, make sure you consistent throughout the project. Choose a structure and stick with it throughout and ensure all developers on the project are aware of the methodology being used and remain consistent to it as well.</p>
+			</div>
+		</article>
 
-		<h2>Rule 35: Use <code>$variables</code> for <em>all</em> colours</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 35: Use <code>$variables</code> for <em>all</em> colours</h2>
 
-		<p>Always declare variables for colours, including <code>black</code> and <code>white</code>. When using a consistent colour palette it makes it much easier to change the site design if even the smallest change has been made.</p>
+				<p>Always declare variables for colours, including <code>black</code> and <code>white</code>. When using a consistent colour palette it makes it much easier to change the site design if even the smallest change has been made.</p>
+			</div>
+		</article>
 
-		<h2>Rule 36: Use <code>$variables</code> to help keep sizing consistent</h2>
+		<article class="rule">
+			<div class="container">
+				<h2>Rule 36: Use <code>$variables</code> to help keep sizing consistent</h2>
 
-		<p>Keep a <code>$spacing</code> variable - it keeps your site&rsquo;s paddings, margins and gutterings consistent. You can make more variables all relative to your main spacing variable too e.g <code>$spacing-half: $spacing / 2</code>. With fonts, this is also a good idea: <code>$fnt-lrg; $fnt-med; $fnt-small;</code>. It&rsquo;s easy on big front-end&rsquo;s to end up with random font sizes. Subtle consistency goes a long way.</p>
-
-
+				<p>Keep a <code>$spacing</code> variable - it keeps your site&rsquo;s paddings, margins and gutterings consistent. You can make more variables all relative to your main spacing variable too e.g <code>$spacing-half: $spacing / 2</code>. With fonts, this is also a good idea: <code>$fnt-lrg; $fnt-med; $fnt-small;</code>. It&rsquo;s easy on big front-end&rsquo;s to end up with random font sizes. Subtle consistency goes a long way.</p>
+			</div>
+		</article>
 
 
 
