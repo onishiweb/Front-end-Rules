@@ -1,0 +1,46 @@
+// ==============================
+// THEME / COLOR SCHEME
+// ==============================
+
+body {
+	background-color:$clr-background;
+	color:$clr-text;
+}
+
+blockquote {
+	border-left:6px solid darken($clr-background, 15%);
+}
+
+.global-header blockquote {
+	border-left:0;
+}
+
+pre {
+	background-color:$clr-text;
+	color:$clr-background;
+	border-radius:$sp-radius;
+}
+
+.rule {
+	border-top:6px solid darken($clr-background, 15%);
+	border-bottom:6px solid darken($clr-background, 15%);
+
+	&:first-of-type {
+		border-top-width:12px;
+	}
+}
+
+.javascript {
+	background-color:$clr-javascript;
+	border-color:darken($clr-javascript, 10%)
+}
+
+.markup {
+	background-color:$clr-html;
+	border-color:darken($clr-html, 10%)
+}
+
+.styling {
+	background-color:$clr-css;
+	border-color:darken($clr-css, 10%)
+}

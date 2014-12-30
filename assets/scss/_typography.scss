@@ -1,0 +1,152 @@
+// ==============================
+// TYPOGRAPHY
+// ==============================
+
+h1,
+h2,
+h3,
+h4 {
+	font-family:$font-headers;
+	font-weight:700;
+}
+
+h1 {
+	margin:0 0 $sp-gutter;
+	font-size:72px;
+	font-size:4.5rem;
+	line-height:1.25;
+}
+
+h2 {
+	margin:0 0 $sp-gutter/2;
+	font-size:36px;
+	font-size:2.25rem;
+	line-height:1;
+}
+
+h3 {
+	margin:0;
+	font-size:24px;
+	font-size:1.5rem;
+	line-height:1;
+}
+
+h4 {
+	margin:0;
+	font-size:18px;
+	font-size:1.125rem;
+	line-height:1;
+}
+
+p, li, blockquote {
+	font-family:$font-body;
+	font-size:18px;
+	font-size:1.125rem;
+	line-height:1.5rem;
+	font-weight:300;
+}
+
+blockquote, em {
+	font-style:italic;
+}
+
+blockquote {
+	@extend %bottom-spacing;
+	padding:$sp-gutter/4 0 $sp-gutter/4 $sp-gutter;
+
+	p {
+		margin-bottom:$sp-gutter/2;
+	}
+}
+
+strong {
+	font-weight:400;
+}
+
+small {
+	font-size:12px;
+	font-size:.75rem;
+}
+
+code {
+	font-family:$font-code;
+}
+
+pre > code {
+	font-size:14px;
+	font-size:.875rem;
+	line-height:1.3333;
+}
+
+h2 > code {
+	font-size:32px;
+	font-weight:400;
+}
+
+p > code,
+li > code {
+	font-size:16px;
+	font-weight:700;
+}
+
+p, ol, ul, blockquote, pre {
+	margin:0 0 $sp-gutter;
+}
+
+li {
+	margin-bottom:$sp-gutter/4;
+}
+
+ul {
+	list-style:disc;
+}
+
+ol {
+	list-style:decimal;
+}
+
+a {
+	margin:0 -0.15em;
+	padding:0 0.15em;
+	color:$clr-css;
+	text-decoration:none;
+
+	&:hover {
+		color:$clr-background;
+		background-color:$clr-css;
+	}
+
+	.javascript &,
+	.markup &,
+	.styling & {
+		color:$clr-background;
+
+		&:hover { background-color:$clr-background; }
+	}
+
+	.javascript &:hover { color:$clr-javascript; }
+	.markup &:hover { color:$clr-html; }
+	.styling &:hover { color:$clr-css; }
+}
+
+// ==============================
+// HEADER
+// ==============================
+
+.global-header {
+	h1 {
+		margin-bottom:$sp-gutter*4;
+		text-align:center;
+	}
+
+	p {
+		font-size:24px;
+		line-height:1.25;
+	}
+
+	blockquote p {
+		font-size:36px;
+		line-height:1.2;
+		text-align:center;
+	}
+}

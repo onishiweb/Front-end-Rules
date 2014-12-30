@@ -8,25 +8,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href='http://fonts.googleapis.com/css?family=Philosopher:400,700|Muli:300,400,300italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Philosopher:700|Muli:300,400,300italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
 	<body>
 
 		<header class="global-header">
 			<div class="container">
-				<h1>Architect&rsquo;s Front-end Rules</h1>
-
-				<h2><a href="http://www.velominati.com/the-rules/">The Rules</a></h2>
-
-				<p>We have a growing Front End team here at Architect working on different projects all over the place all the time, in collaboration and in solitude. Yet we should all be able to pick up and work on any project at any time, regardless of the initial developer and be able to find our way around, understand what we&rsquo;re looking at and pick up where someone left off as easily if it were our own project to begin with.</p>
-
-				<p>The rules are here as our guide to all things Front End at Architect, they are created by us and for us. By following these rules we ensure our code is well-written, well thought out, and easy to maintain.</p>
+				<h1>The Architect<br>Front-End Rules</h1>
 
 				<blockquote>
-					Every line of code should appear to be written by a single person, no matter the number of contributors.
-					<small><a href="https://twitter.com/mdo">@mdo</a></small>
+					<p>Every line of code should appear to be written by a single person, no matter the number of contributors.</p>
+					<cite>- <a href="http://codeguide.co/#golden-rule">Code Guide</a> by <a href="https://twitter.com/mdo">@mdo</a></cite>
 				</blockquote>
+
+				<p>Inspired by <a href="http://www.velominati.com/the-rules/">The Rules</a> by the Keepers of the Cog at the <a href="http://www.velominati.com">Velominati</a>, the <strong>Architect Front-End Rules</strong> are here as our guide to all things front-end at Architect, they are created by us and for us<a href="#caveat-1">*</a>. By following these rules we ensure our code is well-written, well thought out, and easy to maintain.</p>
+
+				<p>We have a growing front-end team here at Architect working on different projects all over the place all the time, in collaboration and in solitude. Yet we should all be able to pick up and work on any project at any time, regardless of the initial developer and be able to find our way around, understand what we&rsquo;re looking at and pick up where someone left off as easily if it were our own project to begin with. By following The Rules we should be able to make that possible.</p>
 			</div>
 		</header>
 
@@ -80,11 +78,11 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule javascript">
 			<div class="container">
 				<h2>Rule 7: Do not use that which is unnecessary.</h2>
 
-				<p>Code and Page bloat are easily avoidable, and serve both the developer and the audience to avoid. The more external frameworks we include in our JavaScript the longer each page takes to load, and the more code we have to trawl through when something goes wrong. Usually, there is a micro-library that will do the same thing, if VanillaJS won&rsquo;t.</p>
+				<p>Code and page bloat are easily avoidable, and serve both the developer and the audience to avoid. The more external frameworks we include in our JavaScript the longer each page takes to load, and the more code we have to trawl through when something goes wrong. Usually, there is a micro-library that will do the same thing, if VanillaJS won&rsquo;t.</p>
 
 				<p>This doesn&rsquo;t mean using micro-libraries over jQuery is always the correct option, but should be at least considered on a project specific basis.</p>
 			</div>
@@ -98,7 +96,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule markup">
 			<div class="container">
 				<h2>Rule 9: Doctype.</h2>
 
@@ -108,7 +106,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule markup">
 			<div class="container">
 				<h2>Rule 10: Attribute order</h2>
 
@@ -133,7 +131,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 11: <code>* { box-sizing:border-box; }</code></h2>
 
@@ -143,7 +141,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule javascript">
 			<div class="container">
 				<h2>Rule 12: The correct number of JavaScript libraries to know is <code>n+1</code></h2>
 
@@ -151,7 +149,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 13: Comments (Sass)</h2>
 
@@ -168,7 +166,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 14: Follow the Outside-In order for style definitions</h2>
 
@@ -186,13 +184,13 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 15: Use whitespace</h2>
 
 				<p>Good readability is key for good code, so make whitespace your friend. Leave space around all declarations and rules, and keep tabbing consistent throughout your code.</p>
 
-				<p>This:</p>
+				<p>More like this:</p>
 
 <pre><code>.element {
 	display:block;
@@ -208,7 +206,7 @@
 }
 </code></pre>
 
-				<p>Not:</p>
+				<p>Less like this:</p>
 
 <pre><code>.element{
 	display:block;
@@ -222,7 +220,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 16: Multi-line CSS</h2>
 
@@ -230,7 +228,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 17: Nesting - 3 levels deep (4 absolute maximum)</h2>
 
@@ -240,7 +238,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 18: Naming conventions</h2>
 
@@ -248,15 +246,15 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule markup">
 			<div class="container">
 				<h2>Rule 19: Accessibility first</h2>
 
-				<p>Always write code with accessibility in mind. Make sure <code>HTML</code> is semantic and <code>CSS</code> won&rsquo;t cause any issues (see <a href="#rule-20">Rule 20</a>). Make sure <code>aria</code> roles are used when useful and necessary in <code>HTML<code>.
+				<p>Always write code with accessibility in mind. Make sure <code>HTML</code> is semantic and <code>CSS</code> won&rsquo;t cause any issues (see <a href="#rule-20">Rule 20</a>). Make sure <code>aria</code> roles are used when useful and necessary in <code>HTML</code>.
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 20: Avoid <code>display:none;</code> where possible</h2>
 
@@ -264,7 +262,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 21: Specificity, don&rsquo;t use IDs in CSS</h2>
 
@@ -272,7 +270,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 22: Avoid <code>!important</code> at all times</h2>
 
@@ -280,7 +278,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 23: Shame.css</h2>
 
@@ -288,7 +286,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 24: Measurements should be applied using the appropriate unit</h2>
 
@@ -296,7 +294,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 25: Media query placement</h2>
 
@@ -315,7 +313,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 26: Mobile first media queries</h2>
 
@@ -325,7 +323,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 27: Don&rsquo;t hand-write browser-prefixes</h2>
 
@@ -333,7 +331,7 @@
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 28: Shorthand notation</h2>
 
@@ -381,7 +379,7 @@ background-repeat:no-repeat;
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule markup">
 			<div class="container">
 				<h2>Rule 30: Never omit optional closing tags</h2>
 
@@ -389,7 +387,7 @@ background-repeat:no-repeat;
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule markup">
 			<div class="container">
 				<h2>Rule 31: CSS at the top, JavaScript at the bottom</h2>
 
@@ -407,7 +405,7 @@ background-repeat:no-repeat;
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 33: No spaces after declarations</h2>
 
@@ -415,15 +413,15 @@ background-repeat:no-repeat;
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 34: Pick a methodology/pattern and stick to it</h2>
 
-				<p>Following on from <a href="#rule-8">Rule #8</a>) on naming conventions, if you&rsquo;re going to choose a CSS methodology like BEM or OOCSS or the modular JS pattern, make sure you consistent throughout the project. Choose a structure and stick with it throughout and ensure all developers on the project are aware of the methodology being used and remain consistent to it as well.</p>
+				<p>Following on from <a href="#rule-8">Rule #8</a> on naming conventions, if you&rsquo;re going to choose a CSS methodology like BEM or OOCSS or the modular JS pattern, make sure you consistent throughout the project. Choose a structure and stick with it throughout and ensure all developers on the project are aware of the methodology being used and remain consistent to it as well.</p>
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 35: Use <code>$variables</code> for <em>all</em> colours</h2>
 
@@ -431,7 +429,7 @@ background-repeat:no-repeat;
 			</div>
 		</article>
 
-		<article class="rule">
+		<article class="rule styling">
 			<div class="container">
 				<h2>Rule 36: Use <code>$variables</code> to help keep sizing consistent</h2>
 
@@ -439,8 +437,22 @@ background-repeat:no-repeat;
 			</div>
 		</article>
 
+		<footer class="global-footer">
+			<div class="container">
+				<h2>Resources</h2>
+				<p>The Rules wouldn&rsquo;t have been possible without the help of these awesome code style guides:</p>
 
+				<ul>
+					<li><a href="http://codeguide.co/">Code Guide by @mdo</a></li>
+					<li><a href="http://cssguidelin.es/">CSS Guidelines by Harry Roberts</a></li>
+					<li><a href="https://github.com/necolas/idiomatic-css">Idiomatic CSS by Nicolas Gallagher</a></li>
+					<li><a href="http://tech.tmw.co.uk/code/TMW-frontend-guidelines/">Front-End Dev Guidelines by TMW</a></li>
+					<li><a href="https://github.com/cxpartners/coding-standards">Coding Standards by CX Partners</a></li>
+				</ul>
 
+				<p><small id="caveat-1">* While our Rules have been written for the front-end team at Architect they are open source and can be adopted/modified for use by anyone.</small></p>
+			</div>
+		</footer>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
